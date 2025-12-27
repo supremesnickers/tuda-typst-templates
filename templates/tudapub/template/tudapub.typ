@@ -138,7 +138,7 @@
   // ]
   additional_pages_after_outline_table_of_contents: none,
 
-
+  additional_pages_after_bibliography: none,
 
   // For headings with a height level than this number no number will be shown.
   // The heading with the lowest level has level 1.
@@ -682,4 +682,8 @@
     #set bibliography(style: "ieee")
     #bib
   ]
+
+  if additional_pages_after_bibliography != none [
+    #additional_pages_after_bibliography
+  ]  
 }
